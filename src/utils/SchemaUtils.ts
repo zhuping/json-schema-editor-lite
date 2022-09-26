@@ -1,7 +1,6 @@
 import _ from 'lodash';
 import Schema from '../types/Schema';
 
-export const lang = 'zh_CN';
 export function getDefaultSchema(type: string): Schema {
   switch (type) {
     case 'string':

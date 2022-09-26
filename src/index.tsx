@@ -25,6 +25,7 @@ export interface JsonSchemaEditorProps {
 }
 
 export const SchemaMobxContext = createContext<SchemaDescription>(new SchemaDescription());
+export const LocaleContext = createContext('zh_CN');
 
 const JsonSchemaObserverEditor = observer((props: JsonSchemaEditorProps) => {
   let defaultSchema;
@@ -70,9 +71,9 @@ const JsonSchemaObserverEditor = observer((props: JsonSchemaEditorProps) => {
 
 const JsonSchemaEditor = (props: JsonSchemaEditorProps): ReactElement => {
   return (
-    <div>
+    <LocaleContext.Provider value={props.locale}>
       <JsonSchemaObserverEditor {...props} />
-    </div>
+    </LocaleContext.Provider>
   );
 };
 

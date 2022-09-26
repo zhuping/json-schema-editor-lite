@@ -24,7 +24,9 @@ const DropPlus = observer((props: DropPlusProp): ReactElement => {
           key: 'sibling_node',
           label: (
             <span
-              onClick={() => name ? context.addField({ keys: prefix, name }) : context.addItem({ keys: prefix })}
+              onClick={() =>
+                name ? context.addField({ keys: prefix, name }) : context.addItem({ keys: prefix })
+              }
             >
               {LocalProvider('sibling_node')}
             </span>

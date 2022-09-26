@@ -1,4 +1,5 @@
-import { lang } from '../../utils/SchemaUtils';
+import React from 'react';
+import { LocaleContext } from '../../index';
 
 const langs = {
   en_US: {
@@ -76,5 +77,6 @@ const langs = {
 }
 
 export default (message) => {
+  const lang = React.useContext(LocaleContext) || 'zh_CN';
   return langs[lang][message];
 }

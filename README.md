@@ -1,9 +1,6 @@
 # Json Schema 可视化编辑器（Antd）
 
-[Antd Design](https://ant.design/) 风格的 Json Schema 可视化编辑器。
-
-[Arco Design](https://arco.design/) 风格：https://github.com/lin-mt/json-schema-editor-arco
-
+基于 [json-schema-editor-visual](https://github.com/Open-Federation/json-schema-editor-visual) 和 [json-schema-editor-antd](https://github.com/lin-mt/json-schema-editor-antd) 改造，支持元组（tuple）功能
 ## 快速开始
 
 ```
@@ -46,5 +43,10 @@ export default () => {
 }
 ```
 
-![示例](./image/img.png)
+## 感谢
+
+* https://github.com/lin-mt/json-schema-editor-antd
+* https://github.com/Open-Federation/json-schema-editor-visual
+
+![示例](./image/img.jpg)
 
