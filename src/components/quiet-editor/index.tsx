@@ -51,11 +51,12 @@ const QuietEditor = (props: QuietEditorProp): ReactElement => {
         folding,
         smoothScrolling: true,
         // 编辑器中字体大小
-        fontSize: 13,
+        fontSize: 14,
+        tabSize: 2,
         // 是否可以滚动到最后一行，可以往上滚动超出内容范围
         scrollBeyondLastLine: false,
         // 左边空出来的宽度
-        lineDecorationsWidth: 19,
+        // lineDecorationsWidth: 1,
         // 滚动条样式
         scrollbar: {
           verticalScrollbarSize: 5,

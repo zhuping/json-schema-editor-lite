@@ -43,10 +43,11 @@ export default () => {
 }
 ```
 
+![示例](./image/img.jpg)
+
 ## 感谢
 
 * https://github.com/lin-mt/json-schema-editor-antd
 * https://github.com/Open-Federation/json-schema-editor-visual
 
-![示例](./image/img.jpg)
 

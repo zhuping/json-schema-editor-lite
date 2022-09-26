@@ -172,13 +172,19 @@ const Editor = observer((): ReactElement => {
             onChange={(key) => {
               setImportJsonType(key);
             }}
+            items={[
+              {
+                label: 'JSON',
+                key: 'json',
+                children: <QuietEditor height={300} language="json" onChange={handleImportJson} />
+              },
+              {
+                label: 'JSON-SCHEMA',
+                key: 'schema',
+                children: <QuietEditor height={300} language="json" onChange={handleImportJsonSchema} />
+              }
+            ]}
           >
-            <Tabs.TabPane tab="JSON" key="json">
-              <QuietEditor height={300} language="json" onChange={handleImportJson} />
-            </Tabs.TabPane>
-            <Tabs.TabPane tab="JSON-SCHEMA" key="schema">
-              <QuietEditor height={300} language="json" onChange={handleImportJsonSchema} />
-            </Tabs.TabPane>
           </Tabs>
         </Modal>
 
